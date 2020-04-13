@@ -1,0 +1,21 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/allen/rep/fpis3.13/src/main/scala/ListFoldTest.scala:73:43: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : y.type (with underlying type B)[0m
+[0m[[0m[31merror[0m] [0m[0m required: A[0m
+[0m[[0m[31merror[0m] [0m[0m    val curried = (x: A) => ( (y: B) => f(y, x))[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/allen/rep/fpis3.13/src/main/scala/ListFoldTest.scala:73:46: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : x.type (with underlying type A)[0m
+[0m[[0m[31merror[0m] [0m[0m required: B[0m
+[0m[[0m[31merror[0m] [0m[0m    val curried = (x: A) => ( (y: B) => f(y, x))[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/allen/rep/fpis3.13/src/main/scala/ListFoldTest.scala:74:79: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : w.type (with underlying type B)[0m
+[0m[[0m[31merror[0m] [0m[0m required: A[0m
+[0m[[0m[31merror[0m] [0m[0m    val fun = foldLeft(l, (x: B) => z ){(acc, e) => (acc compose ((w: B) => f(w,e)) )}[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/allen/rep/fpis3.13/src/main/scala/ListFoldTest.scala:74:81: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : e.type (with underlying type A)[0m
+[0m[[0m[31merror[0m] [0m[0m required: B[0m
+[0m[[0m[31merror[0m] [0m[0m    val fun = foldLeft(l, (x: B) => z ){(acc, e) => (acc compose ((w: B) => f(w,e)) )}[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0mfour errors found[0m
